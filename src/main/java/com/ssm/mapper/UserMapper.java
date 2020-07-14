@@ -5,20 +5,42 @@ import java.util.List;
 import com.ssm.entity.User;
 
 /**
- * 描述:用户mapper接口<BR>
- * 创建人:<BR>
- * 时间:2017年7月10日下午6:14:22<BR>
- * @version
+ * tan
+ * @author lenovo
+ *
  */
 public interface UserMapper {
 
+	/**
+	 * 新增
+	 * @param user
+	 */
     void saveUser(User user);
 
+    /**
+     * 更新
+     * @param user
+     * @return
+     */
     boolean updateUser(User user);
 
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
     boolean deleteUser(int id);
 
+    /**
+     * 查询
+     * @param id
+     * @return
+     */
     User findUserById(int id);
 
+    /**
+     * 查询所有
+     * @return
+     */
     List<User> findAll();
 }
